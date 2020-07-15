@@ -1,7 +1,8 @@
 .App {
   text-align: center;
 }
-.navbar-toggler {
+.navbar-toggler,
+.search-btn {
   background-color: #277dbe;
 }
 .nav-item .btn {
@@ -14,4 +15,15 @@
 }
 .nav-link {
   color: #000 !important;
+}
+.search-form {
+  display: flex;
+}
+.search-btn {
+  border-radius: 20px;
+  margin: 0 0.5rem;
+}
+#searchbar {
+  width: 300px;
+  border-radius: 20px;
 }

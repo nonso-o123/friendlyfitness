@@ -4,7 +4,7 @@ import Searchbar from './Searchbar'
 export default function Home() {
     return (
         <div>
-
+            <Searchbar />
         </div>
     )
 }
