@@ -1,11 +1,23 @@
 import React, { Component } from 'react'
+import { Switch, Route, Redirect, withRouter } from 'react-router-dom'
+import Header from './Header'
+import Home from './HomeComponent'
 
-export default class MainComponent extends Component {
+export default class Main extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {};
+    }
+
     render() {
         return (
-            <div>
+            <>
+                <Header />
+                <Switch>
+                    <Route exact={true} path="/" component={() => <Home {...this.props} />} />
+                </Switch>
 
-            </div>
+            </>
         )
     }
 }
