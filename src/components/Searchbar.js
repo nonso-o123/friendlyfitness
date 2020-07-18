@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
-import { Form, Input, Button, FormGroup } from 'reactstrap'
+import { Form, Input, Button, FormGroup, Dropdown, DropdownItem, DropdownMenu, DropdownToggle } from 'reactstrap'
 
 export default function SearchBar({ handleSubmit }) {
     const [term, setTerm] = useState('')
+    const [dropdownOpen, setDropdownOpen] = useState(false);
     const handleChange = e => {
         setTerm(e.target.value)
     }
@@ -14,6 +15,8 @@ export default function SearchBar({ handleSubmit }) {
 
         <Form onSubmit={handleFormSubmit} className="search-form">
             <FormGroup>
+
+
                 <Input type="text" id="SearchBar" name="SearchBar"
                     placeholder="Search your favorite exercises"
                     onChange={handleChange}
