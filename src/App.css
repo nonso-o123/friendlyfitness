@@ -27,3 +27,16 @@
   width: 300px;
   border-radius: 20px;
 }
+.autoComplete {
+  position: absolute;
+  margin: 0 2px;
+  padding: 0.5rem;
+  text-transform: capitalize;
+  z-index: 10;
+  background-color: #fff;
+  color: #000;
+  background-color: #277dbe26;
+}
+.search-list {
+  background-color: #277dbe26;
+}
