@@ -3,8 +3,12 @@ import {
     Navbar, NavbarBrand, Nav, NavbarToggler,
     Collapse, NavItem, NavLink, Button
 } from 'reactstrap'
+import { useAuth0 } from '@auth0/auth0-react'
+
+
 export default function Header() {
     const [isNavOpen, setNavOpen] = useState(false)
+    const { loginWithRedirect, logout, isAuthenticated, user } = useAuth0()
 
     return (
         <>
@@ -23,11 +27,22 @@ export default function Header() {
                             <NavItem>
                                 <NavLink className="nav-link" to="/contactus">Contact Us</NavLink>
                             </NavItem>
-                            <NavItem>
-                                <Button outline>Sign up</Button>
-                            </NavItem>
-                            <NavItem>
-                                <Button outline>Sign in</Button>
+                            <NavItem className="auth-profile">
+                                {isAuthenticated ? (
+                                    <>
+                                        <Button outline
+                                            onClick={() => logout()}
+                                        >Sign out</Button>
+                                        <div className="p-0  profile">
+                                            <img src={user.picture} alt={user.name} width="30rem" className="rounded-circle thumbnail" />
+                                            <h6 style={{ fontSize: "0.8rem" }}>{user.nickname}</h6>
+                                        </div>
+
+                                    </>
+                                ) :
+                                    <Button outline
+                                        onClick={() => loginWithRedirect()}
+                                    >Sign in</Button>}
                             </NavItem>
                         </Nav>
                     </Collapse>

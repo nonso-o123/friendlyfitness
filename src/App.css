@@ -40,3 +40,12 @@
 .search-list {
   background-color: #277dbe26;
 }
+
+@media only screen and (min-width: 668px) {
+  .auth-profile {
+    display: -webkit-inline-box;
+  }
+  .profile {
+    margin-left: 1.5rem;
+  }
+}

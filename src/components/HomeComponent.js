@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import fetchVids, { baseParams } from '../axios/fetchVids'
 import SearchBar from './SearchBar'
 import VideoList from './VideoList'
+import { Profile } from './auth/Profile'
 export default class Home extends Component {
     constructor(props) {
         super(props)
@@ -49,6 +50,7 @@ export default class Home extends Component {
                         <VideoList handleVideoSelect={this.handleVideoSelect} videos={this.state.videos} />
                     </div>
                 </div>
+                {/* <Profile /> */}
             </div>
         )
     }
