@@ -1,8 +1,9 @@
-import React from 'react';
-import { BrowserRouter } from 'react-router-dom'
-import './App.css';
-import Main from './components/MainComponent'
-import { Auth0Provider } from '@auth0/auth0-react'
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import "./App.css";
+import Main from "./components/MainComponent";
+import ReactPlayer from "react-player";
+import { Auth0Provider } from "@auth0/auth0-react"
 
 const auth_domain = process.env.REACT_APP_AUTH0_DOMAIN
 const auth_clientId = process.env.REACT_APP_AUTH0_CLIENTID
@@ -19,7 +20,6 @@ function App() {
         </div>
       </BrowserRouter>
     </Auth0Provider>
-
   );
 }
 
