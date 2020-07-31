@@ -1,0 +1,2 @@
+dependencies - DONE. app runs after new dep installations
+move componenets
