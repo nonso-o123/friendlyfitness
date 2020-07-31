@@ -1,3 +1,8 @@
+.main-container {
+  width: 100%;
+  height: fit-content;
+}
+
 .container-1 {
   display: flex;
   align-items: flex-end;
