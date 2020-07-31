@@ -1,2 +1,12 @@
 dependencies - DONE. app runs after new dep installations
-move componenets
+move componenets - DONE. all components are working
+
+so far its single page app.
+
+after downloading the repo you might need:
+npm install twilio-video@^2.2.0 --save
+
+in addition to npm install
+
+to start the app:
+npm run dev
