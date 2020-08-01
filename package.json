@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@auth0/auth0-react": "^1.0.0",
-    "@brainhubeu/react-carousel": "^2.0.1",
+    "@brainhubeu/react-carousel": "^1.19.26",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -19,7 +19,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "reactstrap": "^8.5.1",
-    "twilio-video": "^2.7.1"
+    "twilio-video": "^2.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
