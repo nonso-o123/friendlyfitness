@@ -8,7 +8,7 @@ export default function VideoList({ videos, handleVideoSelect }) {
             video={video} />
     })
     return (
-        <div>
+        <div className="vid-list">
             {renderVideos}
         </div>
     )

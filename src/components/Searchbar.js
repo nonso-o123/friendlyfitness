@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Form, Input, Button, FormGroup, Dropdown, DropdownItem, DropdownMenu, DropdownToggle } from 'reactstrap'
+import { Form, Input, Button, FormGroup } from 'reactstrap'
 
 export default function SearchBar({ handleSubmit }) {
 
@@ -80,7 +80,7 @@ export default function SearchBar({ handleSubmit }) {
             <FormGroup>
                 <Button type="submit" value="submit" color="primary"
                     disabled={disabled}
-                    className="search-btn">Search</Button>
+                    className="search-btn search">Search</Button>
             </FormGroup>
         </Form>
 
