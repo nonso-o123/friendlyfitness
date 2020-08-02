@@ -37,7 +37,6 @@
 .search-list {
   background-color: #277dbe26;
 }
-<<<<<<< HEAD
 .col-12 p {
   margin-top: 1rem;
 }
@@ -45,9 +44,6 @@
   width: fit-content;
   height: 20rem;
 }
-=======
-
->>>>>>> temp-branch
 @media only screen and (min-width: 668px) {
   .auth-profile {
     display: -webkit-inline-box;
@@ -55,7 +51,6 @@
   .profile {
     margin-left: 1.5rem;
   }
-<<<<<<< HEAD
   .search-form {
     display: flex;
   }
@@ -83,6 +78,4 @@
 .vid-item {
   margin: 1rem;
   padding: 0.5rem;
-=======
->>>>>>> temp-branch
 }
